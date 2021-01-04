@@ -12,6 +12,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Login Page"),
+          backgroundColor: Colors.blue,
+        ),
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(30.0),
@@ -31,7 +35,12 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10),
-                Image(image: AssetImage("images/fashion.webp")),
+                Image(
+                  image: AssetImage(
+                    "images/fashion.webp",
+                  ),
+                  height: 150,
+                ),
                 SizedBox(height: 10),
                 TextField(
                   decoration: InputDecoration(
